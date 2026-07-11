@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFit - Your Ultimate Fitness Destination</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-in-left {
+            animation: slideInLeft 1s ease-out;
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-slide-in-right {
+            animation: slideInRight 1s ease-out;
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center animate-fade-in">
+                <h1 class="text-6xl font-bold mb-4 text-yellow-400">Welcome to GymFittt</h1>
+                <p class="text-xl mb-8">Transform your body, elevate your mind</p>
+                <a href="#services" class="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition duration-300">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-10 bg-gray-800">
+        <div class="max-w-4xl mx-auto text-center animate-slide-in-left">
+            <h2 class="text-4xl font-bold mb-8 text-yellow-400">About GymFit</h2>
+            <p class="text-lg leading-relaxed">At GymFit, we believe in empowering individuals to achieve their fitness goals through state-of-the-art equipment, expert trainers, and a supportive community. Our modern facility offers everything you need to build strength, improve endurance, and live a healthier life.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-10 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-yellow-400 animate-fade-in">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg animate-slide-in-left">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Personal Training" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-yellow-400">Personal Training</h3>
+                    <p>One-on-one sessions tailored to your fitness goals and needs.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Group Classes" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-yellow-400">Group Classes</h3>
+                    <p>Join our energetic group sessions for yoga, HIIT, and more.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg animate-slide-in-right">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Nutrition Counseling" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-yellow-400">Nutrition Counseling</h3>
+                    <p>Get expert advice on diet and nutrition to fuel your workouts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 px-10 bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-yellow-400 animate-fade-in">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Gym Interior" class="w-full h-64 object-cover rounded animate-slide-in-left">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Equipment" class="w-full h-64 object-cover rounded animate-fade-in">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Workout" class="w-full h-64 object-cover rounded animate-slide-in-right">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Community" class="w-full h-64 object-cover rounded animate-fade-in">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 px-10 bg-gray-900">
+        <div class="max-w-4xl mx-auto text-center animate-slide-in-left">
+            <h2 class="text-4xl font-bold mb-8 text-yellow-400">Contact Us</h2>
+            <p class="text-lg mb-8">Ready to start your fitness journey? Get in touch with us today!</p>
+            <div class="flex justify-center space-x-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Address</h3>
+                    <p>123 Fitness Street<br>Workout City, WC 12345</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Phone</h3>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <p>info@gymfit.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 px-10 text-center">
+        <p>&copy; 2023 GymFit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
